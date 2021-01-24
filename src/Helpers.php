@@ -4,9 +4,18 @@
 namespace openWebX\openHelpers;
 
 
+/**
+ * Class Helpers
+ *
+ * @package openWebX\openHelpers
+ */
 class Helpers {
 
-    public static function findDir(string $dirName) : string {
+    /**
+     * @param string $dirName
+     * @return string|null
+     */
+    public static function findDir(string $dirName) : ?string {
         $dir = __DIR__;
         while ($dir != '/'){
             $folder2Find = $dir . DIRECTORY_SEPARATOR .  $dirName;
@@ -17,6 +26,7 @@ class Helpers {
                 $dir .= '/../';
             }
         }
+        return null;
     }
 
 }
