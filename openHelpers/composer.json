@@ -1,0 +1,19 @@
+{
+  "name": "openwebx/openhelpers",
+  "description": "simple helper stuff used in nearly all of my projects",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "license": "GPL-3.0-or-later",
+  "authors": [
+    {
+      "name": "Jens Reinemuth",
+      "email": "jens@reinemuth.rocks"
+    }
+  ],
+  "autoload": {
+    "psr-4": { "openWebX\\openHelpers\\": "src/" }
+  },
+  "require": {
+    "php": ">=8.0.0"
+  }
+}
